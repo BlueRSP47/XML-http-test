@@ -23,7 +23,7 @@ function showHint(str)
                 document.getElementById("txtHint").innerHTML = this.responseText;
             }
         };
-    xhttp.open("GET", URL, true);
+    xhttp.open("GET", "gethint.php?q="+str, true);
     xhttp.send();
 }
 </script>
